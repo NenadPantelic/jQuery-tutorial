@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		/* to animate, div position cannot be static, it must be relative, absolute or fixed*/
+		$(document).ready(function () {
+			/*chaining = chain multiple actions on the same element*/
+			$("#start").click(function () {
+				$("#square").css("background", "red")
+					.slideUp(2000)
+					.slideDown(2000);
+			});
+		
+
+		});
+	</script>
+
+	<style>
+		#square {
+			background: blue;
+			height: 160px;
+			width: 160px;
+			margin-top: 5px;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button id="start">Animate</button>
+	<div id="square"></div>
+
+</body>
+
+</html>
