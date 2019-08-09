@@ -1,0 +1,32 @@
+<!--
+events:
+
+1) mouse events: click, dblclick, mousenter, mouseleave
+2) keyboard events: keypress, keydown, keyup
+3) form events: submit, change, focus,blur
+4) document/window: load, resize, scroll, unload
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*event*/
+            $('p').click(function () {
+                /*action*/
+                $(this).hide();
+
+            });
+        }); 
+    </script>
+</head>
+
+<body>
+    <p>Click to hide</p>
+</body>
+
+</html>

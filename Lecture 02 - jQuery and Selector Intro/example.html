@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*event*/
+            $('button').click(function () {
+                /*action*/
+                //$('p').hide();
+                /*access element with id = head*/
+                //$('#head').hide();
+                /*to access element with class=head*/
+                //$('.head').hide();
+                /*to access all elements*/
+                //$('*').hide();
+
+                /*to access current elemet*/
+                //$(this).hide();
+
+                /*all button elements */
+                $(':button').hide();
+            });
+        }); 
+    </script>
+</head>
+
+<body>
+    <h2 id="head">This is a heading</h2>
+    <p>This is a line of text</p>
+    <p>This is another line of text</p>
+    <button>Hide</button>
+</body>
+
+</html>

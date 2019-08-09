@@ -1,0 +1,25 @@
+jQuery Selectors
+https://api.jquery.com/category/selectors/
+Basic jQuery syntax:
+
+$(selector).action()
+* $ - define/access jQuery
+* (selector) to find HTML elements
+* action() to be performed on element(s)
+
+
+- Good practise:
+
+nest jQuery methods in:
+$(document).ready(function()){
+
+    //insert jQuery methods here
+}
+
+- prevents from executing any jQuery code before page finishes loading
+
+All selectors access:
+$('*')
+
+Current html element:
+$(this)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                /*hiding speed is 1000ms*/
+                $("#p1").hide(1000);
+
+            });
+
+            $("#show").click(function () {
+                /*showing speed is 1000ms*/
+                $("#p1").show(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="p1"> Text paragraph 1.</p>
+    <button id="hide"> Hide </button>
+    <button id="show"> Show </button>
+</body>
+
+</html>
